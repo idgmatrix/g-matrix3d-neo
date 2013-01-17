@@ -1,0 +1,32 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "soft3dres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON    DISCARDABLE     "gm3d.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open",                       IDC_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       IDC_EXIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About",                      IDC_ABOUT
+    END
+END
+

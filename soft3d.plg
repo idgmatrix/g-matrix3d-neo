@@ -1,0 +1,80 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: soft3d - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\kaswan\LOCALS~1\Temp\RSP53.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Release/" /Fp"Release/soft3d.pch" /YX"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\gm3dneo040\raster.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\kaswan\LOCALS~1\Temp\RSP53.tmp" 
+Creating temporary file "C:\DOCUME~1\kaswan\LOCALS~1\Temp\RSP54.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/soft3d.pdb" /machine:I386 /out:"Release/soft3d.exe" 
+.\Release\asemodel.obj
+.\Release\bmp.obj
+.\Release\dibsection.obj
+.\Release\fileopen.obj
+.\Release\graphics.obj
+.\Release\matrix2.obj
+.\Release\matrix3.obj
+.\Release\matrix4.obj
+.\Release\mesh.obj
+.\Release\model.obj
+.\Release\raster.obj
+.\Release\renbuffer.obj
+.\Release\soft3dapp.obj
+.\Release\stdafx.obj
+.\Release\texmanager.obj
+.\Release\texture.obj
+.\Release\transform.obj
+.\Release\vector2.obj
+.\Release\vector3.obj
+.\Release\vector4.obj
+.\Release\winmain.obj
+.\Release\resource.res
+]
+Creating command line "link.exe @C:\DOCUME~1\kaswan\LOCALS~1\Temp\RSP54.tmp"
+<h3>Output Window</h3>
+Compiling...
+raster.cpp
+Linking...
+Creating temporary file "C:\DOCUME~1\kaswan\LOCALS~1\Temp\RSP56.tmp" with contents
+[
+/nologo /o"Release/soft3d.bsc" 
+.\Release\asemodel.sbr
+.\Release\bmp.sbr
+.\Release\dibsection.sbr
+.\Release\fileopen.sbr
+.\Release\graphics.sbr
+.\Release\matrix2.sbr
+.\Release\matrix3.sbr
+.\Release\matrix4.sbr
+.\Release\mesh.sbr
+.\Release\model.sbr
+.\Release\raster.sbr
+.\Release\renbuffer.sbr
+.\Release\soft3dapp.sbr
+.\Release\stdafx.sbr
+.\Release\texmanager.sbr
+.\Release\texture.sbr
+.\Release\transform.sbr
+.\Release\vector2.sbr
+.\Release\vector3.sbr
+.\Release\vector4.sbr
+.\Release\winmain.sbr]
+Creating command line "bscmake.exe @C:\DOCUME~1\kaswan\LOCALS~1\Temp\RSP56.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+soft3d.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,92 @@
+# Project: soft3d
+# Makefile created by Dev-C++ 4.9.8.3
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = soft3d_private.res
+OBJ  = winmain.o bmp.o dibsection.o fileopen.o graphics.o matrix2.o matrix3.o matrix4.o mesh.o model.o raster.o renbuffer.o soft3dapp.o stdafx.o texmanager.o texture.o transform.o vector2.o vector3.o vector4.o asemodel.o $(RES)
+LINKOBJ  = winmain.o bmp.o dibsection.o fileopen.o graphics.o matrix2.o matrix3.o matrix4.o mesh.o model.o raster.o renbuffer.o soft3dapp.o stdafx.o texmanager.o texture.o transform.o vector2.o vector3.o vector4.o asemodel.o $(RES)
+LIBS =  -L"D:/Dev-Cpp/lib" -mwindows 
+INCS =  -I"D:/Dev-Cpp/include" 
+CXXINCS =  -I"D:/Dev-Cpp/include/c++"  -I"D:/Dev-Cpp/include/c++/mingw32"  -I"D:/Dev-Cpp/include/c++/backward"  -I"D:/Dev-Cpp/include" 
+BIN  = soft3d.exe
+CXXFLAGS = $(CXXINCS)-fno-strict-aliasing   -fmessage-length=0 -fexpensive-optimizations -O3
+CFLAGS = $(INCS)  -fmessage-length=0 -fexpensive-optimizations -O3
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before soft3d.exe all-after
+
+
+clean: clean-custom
+	rm -f $(OBJ) $(BIN)
+
+$(BIN): $(LINKOBJ)
+	$(CPP) $(LINKOBJ) -o "soft3d.exe" $(LIBS)
+
+winmain.o: winmain.cpp
+	$(CPP) -c winmain.cpp -o winmain.o $(CXXFLAGS)
+
+bmp.o: bmp.cpp
+	$(CPP) -c bmp.cpp -o bmp.o $(CXXFLAGS)
+
+dibsection.o: dibsection.cpp
+	$(CPP) -c dibsection.cpp -o dibsection.o $(CXXFLAGS)
+
+fileopen.o: fileopen.cpp
+	$(CPP) -c fileopen.cpp -o fileopen.o $(CXXFLAGS)
+
+graphics.o: graphics.cpp
+	$(CPP) -c graphics.cpp -o graphics.o $(CXXFLAGS)
+
+matrix2.o: matrix2.cpp
+	$(CPP) -c matrix2.cpp -o matrix2.o $(CXXFLAGS)
+
+matrix3.o: matrix3.cpp
+	$(CPP) -c matrix3.cpp -o matrix3.o $(CXXFLAGS)
+
+matrix4.o: matrix4.cpp
+	$(CPP) -c matrix4.cpp -o matrix4.o $(CXXFLAGS)
+
+mesh.o: mesh.cpp
+	$(CPP) -c mesh.cpp -o mesh.o $(CXXFLAGS)
+
+model.o: model.cpp
+	$(CPP) -c model.cpp -o model.o $(CXXFLAGS)
+
+raster.o: raster.cpp
+	$(CPP) -c raster.cpp -o raster.o $(CXXFLAGS)
+
+renbuffer.o: renbuffer.cpp
+	$(CPP) -c renbuffer.cpp -o renbuffer.o $(CXXFLAGS)
+
+soft3dapp.o: soft3dapp.cpp
+	$(CPP) -c soft3dapp.cpp -o soft3dapp.o $(CXXFLAGS)
+
+stdafx.o: stdafx.cpp
+	$(CPP) -c stdafx.cpp -o stdafx.o $(CXXFLAGS)
+
+texmanager.o: texmanager.cpp
+	$(CPP) -c texmanager.cpp -o texmanager.o $(CXXFLAGS)
+
+texture.o: texture.cpp
+	$(CPP) -c texture.cpp -o texture.o $(CXXFLAGS)
+
+transform.o: transform.cpp
+	$(CPP) -c transform.cpp -o transform.o $(CXXFLAGS)
+
+vector2.o: vector2.cpp
+	$(CPP) -c vector2.cpp -o vector2.o $(CXXFLAGS)
+
+vector3.o: vector3.cpp
+	$(CPP) -c vector3.cpp -o vector3.o $(CXXFLAGS)
+
+vector4.o: vector4.cpp
+	$(CPP) -c vector4.cpp -o vector4.o $(CXXFLAGS)
+
+asemodel.o: asemodel.cpp
+	$(CPP) -c asemodel.cpp -o asemodel.o $(CXXFLAGS)
+
+soft3d_private.res: soft3d_private.rc resource.rc 
+	$(WINDRES) -i soft3d_private.rc -I rc -o soft3d_private.res -O coff 
