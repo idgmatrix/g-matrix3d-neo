@@ -2,16 +2,15 @@
 
 ![app](g-matrix3d-neo.png)
 
-**************************************************************************
-*	soft3d (3DS ASE file Viewer)
-*
-*	g-Matrix3d Neo v0.40 (Software Renderer)
-*	(c) 2003 김 성완 (kaswan)
-*	
-*	Release date : 2003. 10. 17
-*
-*	www.g-matrix.pe.kr
-*	kaswan@hitel.net
+soft3d (3DS ASE file Viewer)
+
+g-Matrix3d Neo v0.40 (Software Renderer)
+(c)2003 김 성완 (kaswan)
+	
+Release date : 2003. 10. 17
+
+kaswan@hitel.net
+
 **************************************************************************
 
 <Version 0.40 에 대한 설명>
@@ -46,7 +45,7 @@
 -개발 환경-
  
  OS: Windows
- 컴파일러 : Visual C++ 2022 
+ 컴파일러 : Visual C++ 2022      
             Dev-C++ 4.9.8.3 (GCC 3.2)
 
 
