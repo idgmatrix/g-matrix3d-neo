@@ -45,8 +45,8 @@
 
 -개발 환경-
  
- OS: Windows 2000
- 컴파일러 : Visual C++ 6.0 
+ OS: Windows
+ 컴파일러 : Visual C++ 2022 
             Dev-C++ 4.9.8.3 (GCC 3.2)
 
 
@@ -87,17 +87,24 @@ Dev-C++ : http://www.bloodshed.net
 참고문헌:
 
 http://www.cbloom.com/3d/techdocs/pipeline.txt
+
 Tricks of 3D Game Programming Gurus
 
 조작:
 
 Arrow Keys -	Move Camera 
+
 Mouse	-	Rotate Model
 
 기능:
 
 Gouraud Shading
+
 Perspective Corrected Texturemapping
+
 Sub-Pixel, Sub-Texel Accuracy
+
 Depth-Buffering
+
 3DS MAX ASE file Parser(only Geometry Data)
+
