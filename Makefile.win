@@ -1,29 +1,29 @@
 # Project: soft3d
-# Makefile created by Dev-C++ 4.9.8.3
+# Makefile created by Dev-C++ 5.11
 
-CPP  = g++.exe
-CC   = gcc.exe
-WINDRES = windres.exe
-RES  = soft3d_private.res
-OBJ  = winmain.o bmp.o dibsection.o fileopen.o graphics.o matrix2.o matrix3.o matrix4.o mesh.o model.o raster.o renbuffer.o soft3dapp.o stdafx.o texmanager.o texture.o transform.o vector2.o vector3.o vector4.o asemodel.o $(RES)
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+RES      = soft3d_private.res
+OBJ      = winmain.o bmp.o dibsection.o fileopen.o graphics.o matrix2.o matrix3.o matrix4.o mesh.o model.o raster.o renbuffer.o soft3dapp.o stdafx.o texmanager.o texture.o transform.o vector2.o vector3.o vector4.o asemodel.o $(RES)
 LINKOBJ  = winmain.o bmp.o dibsection.o fileopen.o graphics.o matrix2.o matrix3.o matrix4.o mesh.o model.o raster.o renbuffer.o soft3dapp.o stdafx.o texmanager.o texture.o transform.o vector2.o vector3.o vector4.o asemodel.o $(RES)
-LIBS =  -L"D:/Dev-Cpp/lib" -mwindows 
-INCS =  -I"D:/Dev-Cpp/include" 
-CXXINCS =  -I"D:/Dev-Cpp/include/c++"  -I"D:/Dev-Cpp/include/c++/mingw32"  -I"D:/Dev-Cpp/include/c++/backward"  -I"D:/Dev-Cpp/include" 
-BIN  = soft3d.exe
-CXXFLAGS = $(CXXINCS)-fno-strict-aliasing   -fmessage-length=0 -fexpensive-optimizations -O3
-CFLAGS = $(INCS)  -fmessage-length=0 -fexpensive-optimizations -O3
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib32" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32" -static-libgcc -mwindows -m32
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = soft3d.exe
+CXXFLAGS = $(CXXINCS) -m32 -fno-strict-aliasing
+CFLAGS   = $(INCS) -m32
+RM       = rm.exe -f
 
 .PHONY: all all-before all-after clean clean-custom
 
-all: all-before soft3d.exe all-after
-
+all: all-before $(BIN) all-after
 
 clean: clean-custom
-	rm -f $(OBJ) $(BIN)
+	${RM} $(OBJ) $(BIN)
 
-$(BIN): $(LINKOBJ)
-	$(CPP) $(LINKOBJ) -o "soft3d.exe" $(LIBS)
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
 
 winmain.o: winmain.cpp
 	$(CPP) -c winmain.cpp -o winmain.o $(CXXFLAGS)
@@ -88,5 +88,6 @@ vector4.o: vector4.cpp
 asemodel.o: asemodel.cpp
 	$(CPP) -c asemodel.cpp -o asemodel.o $(CXXFLAGS)
 
-soft3d_private.res: soft3d_private.rc resource.rc 
-	$(WINDRES) -i soft3d_private.rc -I rc -o soft3d_private.res -O coff 
+soft3d_private.res: soft3d_private.rc resource.rc
+	$(WINDRES) -i soft3d_private.rc -F pe-i386 --input-format=rc -o soft3d_private.res -O coff 
+
