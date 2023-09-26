@@ -2,14 +2,21 @@
 
 ![app](g-matrix3d-neo.png)
 
-# soft3d (3DS ASE file Viewer)
+
+# <Version 0.40 을 VC++ 2022 와 Dev-C++ 5.11 에서 빌드 가능하도록 업데이트>
+
+- VC++ 2022 solution 파일 추가    
+- 단, 빋드 타겟은 **x86**만 지원함 (x64는 인라인 어셈블리를 지원하지 않음)    
+- 빌드된 실행파일 **soft3d.exe** 은 프로젝트 폴더로 옮겨서 실행해야 함
+
+- Dev-C++ 5.11 에서 빌드 가능하도록 프로젝트 관련 파일 업데이트    
+- 단, 빌드 타겟은 **win32** 만 지원함
+
+# <Version 0.40 에 대한 설명>
 
 g-Matrix3d Neo v0.40 (Software Renderer)    
 (c)2003 김 성완 (kaswan)   
-	
 Release date : 2003. 10. 17
-
-# <Version 0.40 에 대한 설명>
 
 이번 0.40 버전은 g-Matrix3d Neo 의 첫 공개 버전인 0.30 버전의 업그레이드 버전으로 이전 버전의 여러 버그를 고쳤고, ASE 파일의 기본적인 재질 정보를 처리하도록 했고, 조명 처리에 specular Light 를 포함 시켰습니다. 
 
