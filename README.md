@@ -44,8 +44,8 @@ kaswan@hitel.net
 
 -개발 환경-
  
- OS: Windows
- 컴파일러 : Visual C++ 2022      
+ OS: Windows    
+ 컴파일러 : Visual C++ 2022 (x86)     
             Dev-C++ 4.9.8.3 (GCC 3.2)
 
 
