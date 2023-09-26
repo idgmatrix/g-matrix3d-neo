@@ -2,18 +2,14 @@
 
 ![app](g-matrix3d-neo.png)
 
-soft3d (3DS ASE file Viewer)
+# soft3d (3DS ASE file Viewer)
 
-g-Matrix3d Neo v0.40 (Software Renderer)
-(c)2003 김 성완 (kaswan)
+g-Matrix3d Neo v0.40 (Software Renderer)    
+(c)2003 김 성완 (kaswan)   
 	
 Release date : 2003. 10. 17
 
-kaswan@hitel.net
-
-**************************************************************************
-
-<Version 0.40 에 대한 설명>
+# <Version 0.40 에 대한 설명>
 
 이번 0.40 버전은 g-Matrix3d Neo 의 첫 공개 버전인 0.30 버전의 업그레이드 버전으로 이전 버전의 여러 버그를 고쳤고, ASE 파일의 기본적인 재질 정보를 처리하도록 했고, 조명 처리에 specular Light 를 포함 시켰습니다. 
 
@@ -22,13 +18,13 @@ kaswan@hitel.net
 
 -추가 기능-
 
- . Specular 조명 처리
+ . Specular 조명 처리     
  . ASE 재질 정보 파싱 (텍스츄어를 제외한 메쉬 단위의 기본 재질 정보만) 
 
 
 -개선 기능-
 
- . 마우스로 모델을 회전하는 기능 개선(마우스 드래깅시 회전 값이 항상 모델의 현재 회전 값에서 시작하도록)
+ . 마우스로 모델을 회전하는 기능 개선(마우스 드래깅시 회전 값이 항상 모델의 현재 회전 값에서 시작하도록)     
  . 본이나 바이패드 모델은 렌더링에서 제외
 
 
@@ -44,16 +40,16 @@ kaswan@hitel.net
 
 -개발 환경-
  
- OS: Windows    
- 컴파일러 : Visual C++ 2022 (x86)     
+ OS: Windows 2000      
+ 컴파일러 : Visual C++ 6.0     
             Dev-C++ 4.9.8.3 (GCC 3.2)
 
 
 -Dev-C++ 관련 참고 사이트-
 
-Dev-C++ : http://www.bloodshed.net
-  Mingw : http://www.mingw.org
-    gcc	: http://gcc.gnu.org
+Dev-C++ : http://www.bloodshed.net      
+  Mingw : http://www.mingw.org      
+    gcc	: http://gcc.gnu.org    
 
 
 <저작권 및 배포>
@@ -69,7 +65,7 @@ Dev-C++ : http://www.bloodshed.net
 여기에 구체적으로 명시되지 않은 나머지 모든 권리는 저작권자에게 있으며, 그런 권리를 얻고자 하는 경우에는 반드시 저작권자와 사전 협의를 하시기 바랍니다.
 
 
-<이전 Version 0.30 에 대한 설명>
+# <이전 Version 0.30 에 대한 설명>
 
 이 프로그램은 이전의 초간단 3D 엔진 g-Matrix3d v0.1의 후속 버전으로서 g-Matrix3d Neo 라는 이름이 말하듯이 단순한 업그레이드 버전이 아니라 밑바닥부터 완전히 새로 작성된 새로운 3D 엔진입니다. 이번에는 3D API에 대한 지원없이 T&L 파이프라인과 레스터라이저를 순수 소프트웨어로만 새로 작성했습니다. 이전처럼 3DS MAX의 ASE 파일을 보여주는 간단한 뷰어 기능을 구현해 놓았으니 엔진의 기능이나 성능을 확인해 볼 수 있을 것입니다.  
 
@@ -85,25 +81,18 @@ Dev-C++ : http://www.bloodshed.net
 
 참고문헌:
 
-http://www.cbloom.com/3d/techdocs/pipeline.txt
-
+http://www.cbloom.com/3d/techdocs/pipeline.txt      
 Tricks of 3D Game Programming Gurus
 
 조작:
 
-Arrow Keys -	Move Camera 
-
+Arrow Keys -	Move Camera       
 Mouse	-	Rotate Model
 
 기능:
 
-Gouraud Shading
-
-Perspective Corrected Texturemapping
-
-Sub-Pixel, Sub-Texel Accuracy
-
-Depth-Buffering
-
+Gouraud Shading       
+Perspective Corrected Texturemapping     
+Sub-Pixel, Sub-Texel Accuracy     
+Depth-Buffering      
 3DS MAX ASE file Parser(only Geometry Data)
-
